@@ -1,6 +1,6 @@
 // src/hooks/useAvailableUsers.ts
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { calculateRemainingSeconds } from '../../app/utils';
+import { calculateRemainingSeconds } from '../app/utils';
 import {
   fetchMe,
   getCountries,
@@ -10,7 +10,7 @@ import {
   activateUserAvailability,
   disableUserAvailability,
   getAvailabilityHistory,
-} from '../../app/api/apiClient';
+} from '../app/api/apiClient';
 import type {
   User,
   Country,

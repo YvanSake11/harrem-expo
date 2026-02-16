@@ -9,7 +9,7 @@ import type {
   AvailableUsersResponse,
   AvailabilityStatus,
   AvailabilityHistoryItem,
-} from '../../src/types/api.types';
+} from '../../types/api.types';
 
 // ─────────────────────────────────────────────
 //  AUTHENTIFICATION
@@ -163,3 +163,6 @@ export async function disableUserAvailability(): Promise<void> {
 export async function getAvailabilityHistory(): Promise<AvailabilityHistoryItem[]> {
   return authFetch<AvailabilityHistoryItem[]>('/api/UserAvailability/history');
 }
+
+
+export type { User, Country, City, AvailableUsersResponse, AvailabilityStatus, AvailabilityHistoryItem } from '../../types/api.types';

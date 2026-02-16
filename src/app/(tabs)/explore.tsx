@@ -8,9 +8,9 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import { useAvailableUsers } from '../../src/hooks/Useavailableusers';
+import { useAvailableUsers } from '../../hooks/Useavailableusers';
 import { profilePictureUrl, formatRemainingTime, formatDate, formatTime } from '../utils';
-import type { AvailableUserData, AvailabilityHistoryItem } from '../../src/types/api.types';
+import type { AvailableUserData, AvailabilityHistoryItem } from '../../../src/types/api.types';
 
 const { width: W } = Dimensions.get('window');
 const CARD_W = (W - 48) / 2;
